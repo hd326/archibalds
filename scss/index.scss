@@ -859,7 +859,9 @@ header {
 
 @include mQ(768px) {
     #latest {
+        padding-bottom: 1px;
         #latest-news {
+            margin-bottom: 75px;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr;
 
@@ -1132,11 +1134,15 @@ footer {
 
     #mobile-helper {
         display: block;
+        margin-top: 100px;
     }
 
-    #news {
+
+    #instagram{
         margin-bottom: 82.5px;
     }
+    
+    
 }
 
 // BEGIN THE MENU PAGE
