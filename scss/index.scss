@@ -59,7 +59,7 @@ header {
         ul li {
             padding: 10px 20px;
             font-family: "Crimson Text";
-            font-size: 32px;
+            font-size: 2rem;
             letter-spacing: 5px;
 
             a {
@@ -76,7 +76,7 @@ header {
             display: inline-block;
             margin-left: 20px;
             letter-spacing: 1px;
-            font-size: 14px;
+            font-size: .9rem;
             position: relative;
             letter-spacing: 2px;
 
@@ -120,7 +120,7 @@ header {
                 background-color: rgb(22, 22, 22);
                 padding: 10px 10px;
                 width: 150px;
-                font-size: 11px;
+                font-size: .8rem;
                 font-weight: bold;
                 margin-left: -7.5px;
                 visibility: hidden;
@@ -214,7 +214,7 @@ header {
     top: 0;
     color: whitesmoke;
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5rem;
     display: none;
     z-index: 4;
 
@@ -477,7 +477,7 @@ header {
         width: 60%;
         color: white;
         margin: auto;
-        font-size: 24px;
+        font-size: 1.5rem;
         font-family: "Crimson Text";
         z-index: 3;
     }
@@ -546,7 +546,7 @@ header {
         margin: auto;
 
         h3 {
-            font-size: 32px;
+            font-size: 2rem;
             letter-spacing: 3px;
         }
 
@@ -554,14 +554,14 @@ header {
             margin-top: 15px;
             color: $gold;
             letter-spacing: 4px;
-            font-size: 18px;
+            font-size: 1rem;
         }
 
         button {
             padding: 7.5px 20px;
             color: white;
             z-index: 3;
-            font-size: 14px;
+            font-size: .9rem;
             position: relative;
             background-color: transparent;
             border: 2px solid $gold;
@@ -571,6 +571,12 @@ header {
             margin: 0 auto;
             margin-top: 20px;
         }
+    }
+}
+
+@include mQ(450px){
+    #food-menu {
+        height: 320px;
     }
 }
 
@@ -775,7 +781,7 @@ header {
         width: 60%;
         color: white;
         margin: auto;
-        font-size: 24px;
+        font-size: 1.5rem;
         font-family: "Open Sans";
         z-index: 2;
         text-transform: uppercase;
@@ -872,6 +878,18 @@ header {
     }
 }
 
+@include mQ(450px) {
+    #latest {
+        padding-bottom: 1px;
+        #latest-news {
+
+            .latest-news-col {
+                grid-template-rows: 1fr .8fr;
+            }
+        }
+    }
+}
+
 #news {
     position: relative;
     color: white;
@@ -920,7 +938,7 @@ header {
         text-align: center;
 
         h3 {
-            font-size: 32px;
+            font-size: 2rem;
             letter-spacing: 3px;
         }
 
@@ -928,7 +946,7 @@ header {
             padding: 7.5px 20px;
             color: white;
             z-index: 3;
-            font-size: 14px;
+            font-size: .9rem;
             position: relative;
             background-color: transparent;
             border: 2px solid $gold;
@@ -936,6 +954,12 @@ header {
             margin-top: 30px;
             letter-spacing: 5px;
         }
+    }
+}
+
+@include mQ(450px) {
+    #news{
+        height: 350px;
     }
 }
 
