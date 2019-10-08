@@ -954,18 +954,7 @@ header {
 
 
 
-@include mQ(450px) {
-    #latest {
-        padding-bottom: 1px;
-        #latest-news {
 
-            .latest-news-col {
-                -ms-grid-rows: 1fr .8fr;
-                grid-template-rows: 1fr .8fr;
-            }
-        }
-    }
-}
 
 #news {
     position: relative;
@@ -1043,6 +1032,25 @@ header {
 }
 
 @include mQ(450px) {
+    
+}
+
+@include mQ(450px) {
+    #latest {
+        padding-bottom: 1px;
+        #latest-news {
+            padding-bottom: 50px;
+            .latest-news-col {
+                -ms-grid-rows: 1fr 1fr;
+                grid-template-rows: 1fr 1.2fr;
+                &:nth-of-type(2)
+                {
+                    margin-top: 75px;
+                }
+            }
+        }
+    }
+
     #news{
         height: 350px;
     }
