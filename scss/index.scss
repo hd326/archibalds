@@ -406,7 +406,11 @@ header {
         height: 100%;
         position: absolute;
         z-index: -2;
-        background-attachment: scroll;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        background-attachment: fixed;
     }
 
     #hero-background-shade {
@@ -418,7 +422,7 @@ header {
     }
 
     .hero-background-image:nth-of-type(1) {
-        background-image: url('../images/8.jpg') no-repeat center center;
+        background-image: url('../images/8.jpg');
         background-size: cover;
         -webkit-background-size: cover;
         background-position: center;
