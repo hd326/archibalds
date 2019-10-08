@@ -418,7 +418,7 @@ header {
     }
 
     .hero-background-image:nth-of-type(1) {
-        background-image: url('../images/8.jpg');
+        background-image: url('../images/8.jpg') no-repeat center center;
         background-size: cover;
         -webkit-background-size: cover;
         background-position: center;
