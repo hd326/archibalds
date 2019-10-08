@@ -573,6 +573,8 @@ header {
         background-position: center;
     }
 
+
+
     #food-menu-background-image:before {
         content: '';
         position: absolute;
@@ -840,6 +842,8 @@ header {
         height: 100%;
     }
 
+
+
     #latest-image-layer-helper {
         background-color: rgba(0, 0, 0, 0.925);
         position: absolute;
@@ -1010,6 +1014,8 @@ header {
         background-size: cover;
         background-position: center;
     }
+
+
 
     #news-background-image:before {
         content: '';
@@ -1416,6 +1422,8 @@ footer {
         z-index: 2;
     }
 
+    
+
     #menu-background-helper {
         position: absolute;
         width: 100%;
@@ -1572,6 +1580,9 @@ footer {
         z-index: 2;
     }
 
+
+
+    
     #experience-background-helper {
         position: absolute;
         width: 100%;
@@ -1655,5 +1666,30 @@ footer {
             background: url('../images/food6.jpg');
             height: 40vw;
         }
+    }
+}
+
+@include mQ(767px){
+    .hero-background-image{
+        background-attachment: scroll;
+    }
+    #about-image-layer{
+        background-attachment: scroll;
+    }
+    #food-menu-background-image{
+        background-attachment: scroll;
+    }
+
+    #latest-image-layer{
+        background-attachment: scroll;
+    }
+    #news-background-image{
+        background-attachment: scroll;
+    }
+    #menu-background{
+        background-attachment: scroll;
+    }
+    #experience-background{
+        background-attachment: scroll;
     }
 }
